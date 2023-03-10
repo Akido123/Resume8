@@ -12,16 +12,20 @@
     <div>
       <h1>Akeem Brown</h1>
     
-      <img class="my-picture" src="images/IMG-20230308-WA0000.jpg" alt="this is a picture of me">
+      <picture>
+        <source srcset="./images/IMG-20230308-WA0000.jpg" media="(min-width:1024px)">
+        <source srcset="./images/IMG-20230308-WA0001.jpg" media="(min-width:425px)">
+        <img class="my-picture" src="images/IMG-20230308-WA0000.jpg" alt="this is a picture of me">
+      </picture>
+
     </div>
   
     <p id="introduction">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla porttitor massa id neque aliquam vestibulum. Gravida dictum fusce ut placerat orci nulla pellentesque. Semper risus in hendrerit gravida rutrum. A iaculis at erat pellentesque adipiscing. Odio tempor orci dapibus ultrices in iaculis nunc sed augue. Blandit turpis cursus in hac. Amet nisl suscipit adipiscing bibendum est ultricies integer. Gravida rutrum quisque non tellus orci ac auctor augue. Volutpat maecenas volutpat blandit aliquam etiam erat. Est ante in nibh mauris cursus. Consequat ac felis donec et odio pellentesque diam volutpat commodo. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi. Quam nulla porttitor massa id neque aliquam. Sollicitudin tempor id eu nisl nunc mi ipsum faucibus. Odio tempor orci dapibus ultrices in. Elit eget gravida cum sociis natoque penatibus et magnis. Ut faucibus pulvinar elementum integer enim. Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum. Blandit turpis cursus in hac habitasse platea dictumst.</p>
   </header>
-
   <main>
     <section>   
       <article>
-        <div class="flex-block">
+        <div class="flex-block-large">
           <div class="work">
             <h2 id="work-experience">Work Experience</h2>
   
@@ -51,7 +55,7 @@
           </div>
         </div>
       
-        <div class="flex-block">
+        <div class="flex-block-small">
           <div class="skills">
               <h2 id="software-skills">Software Skills</h2>
             
@@ -99,6 +103,7 @@
           <li><a href="#passions">Passions</a></li>
           <li><a href="#langauge">Langauge</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="#get-in-contact">Contact Me!</a></li>
         </ul>
       </aside>
 
@@ -106,16 +111,45 @@
   </main>
 
   <footer>
-    <h2 id="contact">Contact</h2>
-  
-    <ul>
-      <li>Contac form 1</li>
-      <li>Contac form 2</li>
-      <li>Contac form 3</li>
-      <li>Contac form 4</li>
-      <li>Contac form 5</li>
-      <li><a href="https://www.linkedin.com/feed/?trk=homepage-basic_google-one-tap-submit">LinkedIn</a></li>
-    </ul>
+    <div class="website-links">
+      <h2 id="contact">Contact</h2>
+      
+      <ul>
+        <li>Contac form 1</li>
+        <li>Contac form 2</li>
+        <li>Contac form 3</li>
+        <li>Contac form 4</li>
+        <li>Contac form 5</li>
+        <li><a href="https://www.linkedin.com/feed/?trk=homepage-basic_google-one-tap-submit">LinkedIn</a></li>
+      </ul>
+    </div>
+
+    <div class="get-in-contact">
+      <h2 id="get-in-contact">Contact Me!</h2>
+
+      <form action="https://formsubmit.co/brownakeem431@gmail.com" method="POST">
+        <fieldset>
+          <legend>What is the meaning for you email? <span class="required-text">Required</span></legend>
+
+          <input type="radio" id="assistance" name="assist" value="assistance">
+          <label for="assistance">Assistance</label><br>
+          <input type="radio" id="complaint" name="complain" value="complain">
+          <label for="complaint">Complaint</label><br>
+          <input type="radio" id="recommendation" name="recommend" value="recommend">
+          <label for="recommendation">Recommendation</label><br>
+          <input type="radio" id="personal" name="personal" value="personal">
+          <label for="personal">Personal</label><br>
+        </fieldset><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="feedbackStatment">Provide feedback here please</label>
+        <textarea name="feedbackStatment" cols="50" rows="7"></textarea><br>
+
+        <input type="submit" name="submit" value="Submit">
+      </form>
+    </div>
   </footer>
 </body>
 </html>
