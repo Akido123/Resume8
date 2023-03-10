@@ -1,0 +1,111 @@
+body{
+  font-family: Arial;
+  background-color: #b3afd8;
+}
+
+header{
+  background-color: #b4a5e7;
+  text-align: center;
+  width: 900px;
+  border: solid;
+  border-color: #534674;
+  border-width: 5px;
+  border-radius: 20px;
+}
+
+h1{
+  color: #534674;
+}
+
+h2{
+  text-align: center;
+  color: #55559e;
+}
+
+.my-picture{
+  width: 150px;
+  border: solid;
+  border-width: 5px;
+  border-radius: 20px;
+  border-color: rgb(132, 158, 204);
+}
+
+aside{
+  background-color: #8486db;
+  padding: 5px;
+  padding-right: 10px;
+  border: none;
+  border-radius: 20px;
+  width: 200px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+article{
+  position: relative;
+  margin-top: 20px;
+}
+
+footer{
+  background-color: #91b0cd;
+  position: relative;
+  top: 700px;
+}
+
+.work{
+  background-color: #7878bc;
+  width: 900px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 20px;
+  position: absolute;
+  box-shadow: -5px 5px 0px rgba(0, 0, 0, 0.8);
+}
+
+.education{
+  background-color: #9595D1;
+  width: 900px;
+  height: 600px;
+  padding: 20px;
+  border-radius: 20px;
+  position: absolute;
+  right: 95px;
+  box-shadow: -5px 5px 0px rgba(0, 0, 0, 0.8);
+}
+
+.skills{
+  background-color: #7373b2;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  position: absolute;
+  padding: 5px;
+  left: 0px;
+  top: 450px;
+  box-shadow: -5px 5px 0px rgba(0, 0, 0, 0.8);
+}
+
+.passions{
+  background-color: #8081ba;
+  width: 180px;
+  height: 180px;
+  border-radius: 20px;
+  position: absolute;
+  padding: 5px;
+  left: 250px;
+  top: 470px;
+  box-shadow: -5px 5px 0px rgba(0, 0, 0, 0.8);
+}
+
+.lang{
+  background-color: #6D6DC1;
+  width: 150px;
+  height: 125px;
+  border-radius: 20px;
+  position: absolute;
+  padding: 5px;
+  left: 470px;
+  top: 525px;
+  box-shadow: -5px 5px 0px rgba(0, 0, 0, 0.8);
+}
