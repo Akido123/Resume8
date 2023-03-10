@@ -1,18 +1,17 @@
 body{
   font-family: Arial;
   background-color: #b3afd8;
+  background-image: url("images/capetown.jpg");
 }
 
 header{
   background-color: #b4a5e7;
   text-align: center;
-  width: 900px;
   border: solid;
   border-color: #534674;
   border-width: 5px;
   border-radius: 20px;
   position: relative;
-  left: 25vw;
 }
 
 h1{
@@ -52,6 +51,10 @@ a{
 article{
   position: relative;
   margin-top: 20px;
+}
+
+footer{
+  text-align: center;
 }
 
 .flex-block-large{
@@ -105,7 +108,7 @@ article{
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-delay: 0.30s;
+  animation-delay: 0.40s;
   transition: background-color 0.3s;
 }
 
@@ -121,8 +124,9 @@ article{
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-delay: 0.35s;
+  animation-delay: 0.50s;
   transition: background-color 0.3s;
+  margin-right: 300px;
 }
 
 .passions{
@@ -137,8 +141,9 @@ article{
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-delay: 0.40s;
+  animation-delay: 0.60s;
   transition: background-color 0.3s;
+  margin-right: 300px;
 }
 
 .lang{
@@ -153,7 +158,7 @@ article{
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-delay: 0.45s;
+  animation-delay: 0.70s;
   transition: background-color 0.3s;
 }
 
@@ -198,4 +203,161 @@ article{
 
 .lang:hover{
   background-color: #7f7fc2;
+}
+
+@media only screen and (max-width: 425px){
+  body{
+    font-size: smaller;
+  }
+
+  header{
+    width: fit-content;
+    height: auto;
+    font-size: small;
+    padding: 20px;
+  }
+
+  h2, h1{
+    font-size: medium;
+  }
+
+  aside{
+    width: 150px;
+    height: 150px;
+    right: 0px;
+    bottom: 0px;
+    padding: 0px;
+    position: fixed;
+    font-size: xx-small;
+  }
+
+  .footer{
+
+  }
+
+  
+  .flex-block-large{
+    flex-direction: column;
+    text-align: center;
+    
+  }
+  
+  .flex-block-small{
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .work{
+    width: 300px;
+    left: 30px;
+    height: fit-content;
+    margin-bottom: 20px;
+  }
+  
+  .education{
+    width: 300px;
+    height: fit-content;
+  }
+  
+  .skills{
+    left: 150px;
+    height: fit-content;
+  }
+  
+  .passions{
+    left: 150px;
+    height: fit-content;
+  }
+  
+  .lang{
+    height: fit-content;
+  }
+
+  .website-links{
+    width: 200px;
+    margin-bottom: 10px;
+    position: static;
+  }
+
+  .get-in-contact{
+    width: 360px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  body{
+    font-size: smaller;
+  }
+
+  header{
+    width: fit-content;
+    height: auto;
+    font-size: small;
+    padding: 20px;
+  }
+
+  h2, h1{
+    font-size: medium;
+  }
+
+  aside{
+    width: fit-content;
+    right: 0px;
+    bottom: 0px;
+    padding: 10px;
+    position: fixed;
+    font-size: small;
+  }
+
+  .footer{
+
+  }
+
+  
+  .flex-block-large{
+    flex-direction: column;
+    text-align: center;
+    
+  }
+  
+  .flex-block-small{
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .work{
+    width: 300px;
+    left: 30px;
+    height: fit-content;
+    margin-bottom: 20px;
+  }
+  
+  .education{
+    width: 300px;
+    height: fit-content;
+  }
+  
+  .skills{
+    left: 150px;
+    height: fit-content;
+  }
+  
+  .passions{
+    left: 150px;
+    height: fit-content;
+  }
+  
+  .lang{
+    height: fit-content;
+  }
+
+  .website-links{
+    width: 200px;
+    margin-bottom: 10px;
+    position: static;
+  }
+
+  .get-in-contact{
+    width: 360px;
+  }
 }
