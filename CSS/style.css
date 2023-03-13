@@ -1,7 +1,8 @@
 body{
   font-family: Arial;
   background-color: #b3afd8;
-  background-image: url("images/capetown.jpg");
+  background-image: url("../images/capetown.jpg");
+  background-repeat: no-repeat;
 }
 
 header{
@@ -230,11 +231,6 @@ footer{
     position: fixed;
     font-size: xx-small;
   }
-
-  .footer{
-
-  }
-
   
   .flex-block-large{
     flex-direction: column;
@@ -284,7 +280,7 @@ footer{
   }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (min-width: 768px){
   body{
     font-size: smaller;
   }
@@ -308,11 +304,6 @@ footer{
     position: fixed;
     font-size: small;
   }
-
-  .footer{
-
-  }
-
   
   .flex-block-large{
     flex-direction: column;
@@ -335,6 +326,75 @@ footer{
   .education{
     width: 300px;
     height: fit-content;
+  }
+  
+  .skills{
+    left: 150px;
+    height: fit-content;
+  }
+  
+  .passions{
+    left: 150px;
+    height: fit-content;
+  }
+  
+  .lang{
+    height: fit-content;
+  }
+
+  .website-links{
+    width: 200px;
+    margin-bottom: 10px;
+    position: static;
+  }
+
+  .get-in-contact{
+    width: 360px;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+  body{
+    font-size: medium;
+  }
+
+  header{
+    width: fit-content;
+    height: auto;
+    padding: 20px;
+  }
+
+  h2, h1{
+    font-size: medium;
+  }
+
+  aside{
+    width: fit-content;
+    right: 0px;
+    bottom: 0px;
+    padding: 10px;
+    position: fixed;
+  }
+  
+  .flex-block-large{
+    flex-direction: column;
+    text-align: center;
+    
+  }
+  
+  .flex-block-small{
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .work{
+    left: 30px;
+    width: fit-content;
+    margin-bottom: 20px;
+  }
+  
+  .education{
+    width: fit-content;
   }
   
   .skills{
